@@ -1,0 +1,5 @@
+<%= form_for @conn, page_path(@conn, :send_song), fn f -> %>
+  <%= text_input f, :song, placeholder: "Antidote", required: true, autofocus: true %>
+
+  <%= submit "Search", class: "button success expanded" %>
+<% end %>
